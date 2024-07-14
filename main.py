@@ -45,6 +45,7 @@ while True:
 
     elif saque > 0:
       saldo -= saque
+      saques_diarios -= 1
       extrato += f"Saque: R$ {saque:.2f}\n"
   
   elif opcao == "e":  #Condição caso for extrato
