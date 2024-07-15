@@ -1,16 +1,53 @@
-<h1>DESAFIO: CRIANDO UMA CONTA BANCÁRIA</h1>
-<h3>Objetivo</h3>
-Fortificar os conhecimentos com os operadores lógicos, estruturas condicionais e laços de repetições e manipulção de strings.
+# DantasBank
+###Criado para projeto de curso de um bootcamp na DIO
+## Contexto
 
-<h3>Contexto</h3>
-Fomos contratado por um grande banco para desenvolver seu novo sistema. Esse banco deseja modernizar suas operações e para isso escolheu o Python. Para a primeira versão do sistema devemos implementar apenas 3 operações: sacar, depositar e extrato.
+Este projeto é um sistema bancário simples em Python, permitindo a gestão de usuários e contas. O sistema oferece funcionalidades como depósito, saque, visualização de extrato, criação de usuários e contas, e listagem de contas, utilizando Programação Orientada a Objetos (POO).
 
-<h3>Operações de depósito</h3>
-Deve ser possível depositar valores positivos para a minha conta bancária. A v1 do projeto trabalha com apenas 1 usuário, dessa forma não precisamos nos preocupar em identificar qual é o número da agência e conta bancária. Todos os depósitos devem ser armazenados em uma variávele e exibidos na operação de extrato.
+## Funcionalidades
 
-<h3>Operações de saque</h3>
-O sistema deve permitir realizar 3 saques diários com limite máximo de R$ 500.00 por saque. Caso o usuário não tenha saldo em conta, o sistema deve exibir uma mensagem informando que não será possível sacar o dinheiro por falta de saldo.Todos os saques devem ser armazenados em uma variável e ser exibidas no extrato.
+- **Criar Usuário:** Registro de um novo usuário (CPF, nome, senha, etc.).
+- **Criar Conta Corrente:** Criação de uma conta para um usuário existente.
+- **Depositar:** Adição de valor à conta.
+- **Sacar:** Retirada de valor da conta com limite.
+- **Exibir Extrato:** Visualização de movimentações da conta.
+- **Listar Contas:** Informações sobre as contas de um usuário.
 
-<h3>Operações de extrato</h3>
-Essa operação deve listar todos os depósitos e saques realizados na conta. No fim da listagem deve ser exibido o saldo atual da conta. Se o extrato estiver em branco, exibir a mensagem: Não foram realizadas movimentações. <br>
-Os valores devem ser exibidos no formato R\$ xxx.xx, ex: 150.50 = R\$ 150.50.
+## Como Usar
+
+### Pré-requisitos
+
+Tenha o Python 3.x instalado. Baixe em [python.org](https://www.python.org/downloads/).
+
+### Executando o Código
+
+1. **Clone o repositório ou copie o código.**
+2. **Execute o script:**
+   ```bash
+   main.py
+   
+# Interagindo com o Menu
+É importante ressaltar que é necessário criar um usuário e uma conta para realizar as opções do menu (exceto a opção "q")
+
+- **[d] Depositar**: Insira um valor para depósito.
+- **[s] Saque**: Insira um valor, respeitando limites e saldo.
+- **[e] Extrato**: Mostra movimentações e saldo atual.
+- **[u] Novo usuário**: Cadastre um novo usuário.
+- **[c] Nova conta**: Crie uma conta para um usuário existente.
+- **[l] Listar contas**: Exiba contas de um usuário com CPF e senha.
+- **[q] Sair**: Encerra o programa.
+
+## Estrutura do Código
+
+- **Usuario**: Dados do usuário.
+- **ContaCorrente**: Operações da conta.
+- **Banco**: Lógica para gerenciamento de usuários e contas.
+
+## Contribuições
+
+Contribuições são bem-vindas! Abra um "pull request" ou um "issue" para discutir melhorias.
+
+## Licença
+
+Este projeto é de domínio público. Sinta-se livre para usar e modificar.
+
